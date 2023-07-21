@@ -1,7 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from "firebase/analytics";
-// Optionally import the services that you want to use
-// import {...} from "firebase/auth";
+import {getAuth} from "firebase/auth";
 // import {...} from "firebase/database";
 // import {...} from "firebase/firestore";
 // import {...} from "firebase/functions";
@@ -18,5 +16,5 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const fireconfig = initializeApp(firebaseConfig);
-const analytics = getAnalytics(fireconfig);
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
