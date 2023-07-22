@@ -5,9 +5,9 @@ import * as React from "react";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Login } from "./comps/login";
-import { Home } from "./comps/home";
-import { CardDetails } from "./comps/CardView";
+import { Login } from "./app_module/login";
+import { Home } from "./app_module/home";
+import { CardDetails } from "./app_module/CardView";
 
 const Stack = createNativeStackNavigator();
 
