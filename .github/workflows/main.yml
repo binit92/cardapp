@@ -6,7 +6,7 @@ on:
       - main
 jobs:
   build:
-    name: Build
+    name: public
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
