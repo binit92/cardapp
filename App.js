@@ -1,7 +1,15 @@
 import { useState, useEffect } from 'react';
 import * as React from "react";
 
-
+import {
+  SafeAreaView,
+  ImageBackground,
+  Image,
+  Text,
+  View,
+  ScrollView,
+  Pressable,
+} from "react-native";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -20,11 +28,11 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
+         {/* <Stack.Screen
           name="LoginScreen"
           component={Login}
           options={{ headerShown: false }}
-        />
+        /> */}
         <Stack.Screen
           name="FlashCards"
           component={Home}
@@ -36,7 +44,10 @@ export default function App() {
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
+
+
     </NavigationContainer>
+
   );
 }
 

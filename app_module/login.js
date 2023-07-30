@@ -48,7 +48,7 @@ export function Login({ navigation }) {
           <Text style={styles.LoginHeader}>
             Flash<Text style={{ color: "#fff" }}>Cards</Text>
           </Text>
-<Flex m="2"  items="center" spacing={2}>
+<Flex items="center" >
       <View
             style={{
               padding: 30,
