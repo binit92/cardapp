@@ -50,7 +50,7 @@ export const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    marginTop: 30,
+    marginTop: 0,
     backgroundColor: "#301E67",
   },
   cardTitle: {

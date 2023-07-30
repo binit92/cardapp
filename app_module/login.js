@@ -7,7 +7,7 @@ import {
   Alert,
 } from "react-native";
 
-import { Button } from "@react-native-material/core";
+import { Flex, Button } from "@react-native-material/core";
 import { styles } from "./styles";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase/firebaseConfig";
@@ -43,11 +43,13 @@ export function Login({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground source={loginBG} resizeMode="cover" style={styles.image}>
+
         <View style={{ flex: 1, justifyContent: "center", padding: 20 }}>
           <Text style={styles.LoginHeader}>
             Flash<Text style={{ color: "#fff" }}>Cards</Text>
           </Text>
-          <View
+<Flex m="2"  items="center" spacing={2}>
+      <View
             style={{
               padding: 30,
               paddingBottom: 60,
@@ -94,6 +96,8 @@ export function Login({ navigation }) {
               />
             </View>
           </View>
+          </Flex>
+
         </View>
 
         <Text
